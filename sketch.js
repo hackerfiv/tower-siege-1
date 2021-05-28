@@ -6,14 +6,14 @@ var engine,world;
 var holder,polygon,ground;
 var stand1,stand2;
 var Slingshot;
-var bg = "images/light.jpg";
+var bg = "light.jpg";
 var  backgroundImg ;
 
 
 function  preload () { 
   getBackgroundImg();
 
-  polygon_img=loadImage("images/polygon.png");
+  polygon_img=loadImage("polygon.png");
 
 }
 
@@ -146,10 +146,10 @@ async function getBackgroundImg(){
   var hour = datetime.slice(11,13);
   
   if(hour>=0600 && hour<=1900){
-      bg = "images/dark.jpg";
+      bg = "dark.jpg";
   }
   else{
-      bg = "images/light.jpg";
+      bg = "light.jpg";
   }
 
   backgroundImg = loadImage(bg);
